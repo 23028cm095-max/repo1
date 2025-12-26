@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FutureOrbit | Career Paths AP</title>
+    <style>
+        /* UI/UX Design - Space Theme & Glassmorphism */
+        :root {
+            --space-bg: #05050a;
+            --nebula-purple: #6a11cb;
+            --nebula-blue: #2575fc;
+            --text-white: #ffffff;
+            --glass-bg: rgba(255, 255, 255, 0.1);
+            --accent-gold: #ffd700;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+
+        body {
+            background-color: var(--space-bg);
+            color: var(--text-white);
+            overflow-x: hidden;
+        }
+
+        /* Animated Stars Background */
+        #stars-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            background: radial-gradient(ellipse at bottom, #1B2735 0%, #090A0F 100%);
+        }
+
+        .star {
+            position: absolute;
+            background: white;
+            border-radius: 50%;
+            opacity: 0.5;
+            animation: twinkle var(--duration) infinite;
+        }
+
+        @keyframes twinkle {
+            0%, 100% { opacity: 0.3; transform: scale(1); }
+            50% { opacity: 1; transform: scale(1.2); }
+        }
+
+        /* Content Styling */
+        header {
+            text-align: center;
+            padding: 60px 20px;
+            background: linear-gradient(to bottom, rgba(0,0,0,0.8), transparent);
+        }
+
+        h1 { font-size: 3rem; margin-bottom: 10px; letter-spacing: 2px; }
+        .tagline { color: var(--nebula-blue); font-weight: bold; text-transform: uppercase; }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+            margin-top: 40px;
+        }
+
+        /* Glassmorphism Cards */
+        .card {
+            background: var(--glass-bg);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 20px;
+            padding: 30px;
+            transition: transform 0.3s ease, border-color 0.3s ease;
+            cursor: pointer;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            border-color: var(--nebula-blue);
+            box-shadow: 0 0 20px rgba(37, 117, 252, 0.4);
+        }
+
+        .card h2 { color: var(--accent-gold); margin-bottom: 15px; }
+        .card ul { list-style: none; margin-top: 15px; }
+        .card li { margin-bottom: 8px; font-size: 0.9rem; color: #ddd; }
+        .card li b { color: white; }
+
+        .btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background: var(--nebula-blue);
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            font-size: 0.8rem;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="stars-container"></div>
+
+    <header>
+        <h1>FUTURE ORBIT</h1>
+        <p class="tagline">Mission Control: Post-10th Careers in Andhra Pradesh</p>
+    </header>
+
+    <div class="container">
+        <div class="grid">
+            <div class="card">
+                <h2>🚀 Intermediate (10+2)</h2>
+                <p>The standard path for Higher Education (MPC, BiPC, CEC, HEC,...etc).</p>
+                <ul>
+                    <li><b>Top Colleges:</b></li>
+                    <li>• Sri Chaitanya / Narayana (State-wide)</li>
+                    <li>• Vignan Junior College (Guntur/Vizag)</li>
+                    <li>• Westin Junior College (Vijayawada)</li>
+                </ul>
+                <a href="https://jnanabhumi.ap.gov.in/clgWebsiteForm.edu?studentAction=unspecified&ub_code=17" target="_blank" class="btn">Explore colleges</a>
+            </div>
+
+            <div class="card">
+                <h2>🛠️ Polytechnic (Diploma)</h2>
+                <p>3-year technical courses via AP POLYCET.</p>
+                <ul>
+                    <li><b>Top Colleges:</b></li>
+                    <li>• Govt Polytechnic (Vijayawada/Vizag)</li>
+                    <li>• ESC Govt Polytechnic (Nandyal)</li>
+                    <li>• Andhra Polytechnic (Kakinada)</li>
+                </ul>
+                <a href="https://jnanabhumi.ap.gov.in/clgWebsiteForm.edu?studentAction=unspecified&ub_code=46" target="_blank" class="btn">View college list</a>
+            </div>
+
+            <div class="card">
+                <h2>🎖️ Indian Army (Agniveer)</h2>
+                <p>Join the elite forces directly after 10th class.</p>
+                <ul>
+                    <li><b>Entry Paths:</b></li>
+                    <li>• Agniveer General Duty (GD)</li>
+                    <li>• Agniveer Tradesmen (10th Pass)</li>
+                    <li>• <b>Prep:</b> Pragati Defence Academy (Vizag)</li>
+                </ul>
+                <a href="https://joinindianarmy.nic.in" target="_blank" class="btn">Official Website</a>
+            </div>
+
+            <div class="card">
+                <h2>⚡ ITI & Vocational</h2>
+                <p>Short-term skill-based training for immediate jobs.</p>
+                <ul>
+                    <li><b>Popular Trades:</b></li>
+                    <li>• Electrician / Fitter</li>
+                    <li>• Computer Operator (COPA)</li>
+                    <li>• Medical Lab Technician (MLT)</li>
+                </ul>
+                <a href="https://jnanabhumi.ap.gov.in/clgWebsiteForm.edu?studentAction=unspecified&ub_code=18" target="_blank" class="btn">Find ITI Centers</a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Generate Stars Dynamically
+        const container = document.getElementById('stars-container');
+        const starCount = 150;
+
+        for (let i = 0; i < starCount; i++) {
+            const star = document.createElement('div');
+            star.className = 'star';
+            
+            // Random positions
+            const x = Math.random() * 100;
+            const y = Math.random() * 100;
+            
+            // Random sizes and durations
+            const size = Math.random() * 3;
+            const duration = 2 + Math.random() * 4;
+
+            star.style.left = `${x}%`;
+            star.style.top = `${y}%`;
+            star.style.width = `${size}px`;
+            star.style.height = `${size}px`;
+            star.style.setProperty('--duration', `${duration}s`);
+
+            container.appendChild(star);
+        }
+    </script>
+</body>
+</html>
